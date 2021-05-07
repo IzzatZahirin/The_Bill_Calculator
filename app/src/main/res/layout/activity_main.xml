@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="@string/Amount" />
+
+    <EditText
+        android:id="@+id/editInputAmount"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:digits="123456789"
+        android:textSize="16dp"
+        android:hint="Enter amount" />
+
+    <TextView
+        android:id="@+id/NumOfPax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/NumofPax"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/editInputNumpax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="16dp"
+        android:hint="Enter the number of people" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tbSvs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/togglebuttonSvs"
+            android:textOff="@string/svsDisabled"
+            android:textOn="@string/svsEnabled"/>
+
+        <ToggleButton
+            android:id="@+id/tbGst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/togglebuttonGst"
+            android:textOff="@string/gstDisabled"
+            android:textOn="@string/gstEnabled"/>/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Discount"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="30"
+            android:hint="Enter discount"
+            android:inputType="number"
+            android:textSize="16dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:id="@+id/radioG">
+
+            <RadioButton
+                android:id="@+id/radioButtonCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Cash" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPaynow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paynow" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tbSplit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/togglebuttonSplit"
+                android:textOff="@string/splitDisabled"
+                android:textOn="@string/splitEnabled" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@null"
+                android:text="@string/buttonReset"
+                app:backgroundTint="@android:drawable/btn_toggle_material" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textTotalBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Bill:" />
+
+        <TextView
+            android:id="@+id/textEachPays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Each pays:" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
